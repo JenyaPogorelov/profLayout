@@ -9,10 +9,7 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5c2505a-1897-49e9-8289-6ad211f26f9d" name="Default Changelist" comment="Project">
-      <changelist_data name="ShadowD" email="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c5c2505a-1897-49e9-8289-6ad211f26f9d" name="Default Changelist" comment="Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +108,7 @@
       <workItem from="1618040164911" duration="2726000" />
       <workItem from="1618081471259" duration="31108000" />
       <workItem from="1618655755896" duration="45009000" />
-      <workItem from="1618909904450" duration="3463000" />
+      <workItem from="1618909904450" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="Project">
       <created>1618906900465</created>
@@ -225,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618912690405</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Project">
+      <created>1618913416267</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618913416267</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Project">
+      <created>1618913579141</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618913579141</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
