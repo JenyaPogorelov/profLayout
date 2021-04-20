@@ -125,7 +125,6 @@
   margin-top: 65px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-sizing: border-box;
   flex-wrap: wrap;
 }
@@ -169,6 +168,7 @@
   line-height: 22px;
 }
 .main .gallery {
+  margin: 0 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,8 +190,6 @@
   color: #9F9F9F;
 }
 .main .gallery .gallery__wrapper {
-  margin: 0 230px;
-  max-width: 1140px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -260,6 +258,7 @@
   text-align: center;
   padding: 14px 38px;
   margin-bottom: 95px;
+  margin-top: 48px;
 }
 .main .gallery .gallery__browse_all_product a {
   font-size: 16px;
