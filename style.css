@@ -166,6 +166,106 @@
 .header .header__main .header__main__heading .heading__positon h1 span {
   color: #F16D7F;
 }
+.header .header__main_catalog {
+  position: relative;
+  max-height: 764px;
+  min-height: 148px;
+  background: #F8F3F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__main_catalog .header__main_catalog__wrapper {
+  margin: 0 230px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1599px) {
+  .header .header__main_catalog .header__main_catalog__wrapper {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 667px) {
+  .header .header__main_catalog .header__main_catalog__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header .header__main_catalog .header__main_catalog__wrapper .new-arrivals {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+@media (max-width: 667px) {
+  .header .header__main_catalog .header__main_catalog__wrapper .new-arrivals {
+    margin: 24px 0 32px 0;
+  }
+}
+.header .header__main_catalog .header__main_catalog__wrapper .current-catalog {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+@media (max-width: 667px) {
+  .header .header__main_catalog .header__main_catalog__wrapper .current-catalog {
+    margin-bottom: 46px;
+  }
+}
+.header .header__main_catalog .header__main_catalog__wrapper .current-catalog span {
+  color: #F16D7F;
+}
+.header .header__main_catalog .menu {
+  position: absolute;
+  width: 230px;
+  background: #FFFFFF;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  overflow: auto;
+}
+.header .header__main_catalog .menu .menu__close {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.header .header__main_catalog .menu .menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 37px;
+  margin-left: 34px;
+  position: relative;
+}
+.header .header__main_catalog .menu .menu__wrapper .menu__heading {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.header .header__main_catalog .menu .menu__wrapper .menu__name {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.header .header__main_catalog .menu .menu__wrapper .menu__name .menu__name__list {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-left: 21.5px;
+  margin-top: 12px;
+}
+.header .header__main_catalog .menu .menu__wrapper .menu__name .menu__name__list li {
+  margin: 11px 0 0 0;
+}
 
 .main {
   margin-top: 65px;
@@ -304,6 +404,7 @@
 }
 .main .gallery .gallery__wrapper .gallery__card {
   max-width: 360px;
+  background-color: #F8F8F8;
 }
 .main .gallery .gallery__wrapper .gallery__card .gallery__card__wrapper:hover .gallery__card__hidden {
   opacity: 1;
