@@ -1162,6 +1162,106 @@
 
   }
 
+  .main-product__gallery_wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 581px;
+    margin-bottom: 128px;
+    @media (max-width: 1150px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 17px;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 360px;
+      margin-bottom: 64px;
+    }
+
+    .gallery__card {
+      max-width: 360px;
+      background-color: #F8F8F8;
+
+      .gallery__card__wrapper:hover .gallery__card__hidden {
+        //display: flex;
+        opacity: 1;
+      }
+
+      .gallery__card__wrapper {
+        position: relative;
+
+        .gallery__card__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .gallery__card__hidden {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          //display: none;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: rgba(58, 56, 56, 0.86);
+          transition: 0.5s;
+
+          label {
+            border: 1px solid #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+
+            span {
+              font-size: 14px;
+              line-height: 17px;
+              color: #FFFFFF;
+              margin-left: 11px;
+            }
+          }
+        }
+      }
+
+      .gallery__card__info {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 18px 20px 18px;
+
+        .gallery__card__heading {
+          font-size: 13px;
+          line-height: 16px;
+          color: #000000;
+        }
+
+        .gallery__card__text {
+          margin: 12px 0 18px 0;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          color: #5D5D5D;
+        }
+
+        .gallery__card__price {
+          font-size: 16px;
+          line-height: 19px;
+          color: #F16D7F;
+        }
+
+      }
+
+    }
+
+    .gallery__card:last-child {
+      @media (max-width: 1150px) {
+        display: none;
+      }
+    }
+  }
+
 }
 
 .footer {
