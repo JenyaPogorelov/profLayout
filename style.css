@@ -1203,6 +1203,7 @@ body {
 @media (max-width: 768px) {
   .main-cart {
     margin-top: 39px;
+    margin-bottom: 96px;
   }
 }
 .main-cart .main-cart__wrapper {
@@ -1370,11 +1371,13 @@ body {
 @media (max-width: 1150px) {
   .main-cart .main-cart__wrapper .main-cart__items .main-cart__items__buttons {
     margin-bottom: 64.5px;
+    justify-content: space-evenly;
   }
 }
 @media (max-width: 768px) {
   .main-cart .main-cart__wrapper .main-cart__items .main-cart__items__buttons {
     margin-bottom: 48px;
+    column-gap: 9px;
   }
 }
 .main-cart .main-cart__wrapper .main-cart__items .main-cart__items__buttons button {
@@ -1384,13 +1387,16 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .main-cart .main-cart__wrapper .main-cart__items .main-cart__items__buttons button {
-    padding: 9px 17px;
+    padding: 9px 0;
+    width: 100%;
     font-size: 12px;
     line-height: 14px;
     text-align: center;
+    text-transform: capitalize;
     color: #575757;
   }
 }
@@ -1405,6 +1411,12 @@ body {
     grid-template-columns: 360px 360px;
     grid-template-rows: 306px;
     column-gap: 15.5px;
+  }
+}
+@media (max-width: 768px) {
+  .main-cart .main-cart__wrapper .main-cart__form_buy {
+    grid-template-columns: 358px;
+    row-gap: 48px;
   }
 }
 .main-cart .main-cart__wrapper .main-cart__form_buy .main-cart__form {
@@ -1440,6 +1452,15 @@ body {
   color: #4A4A4A;
   background: #FFFFFF;
   border: 1px solid #A4A4A4;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .main-cart .main-cart__wrapper .main-cart__form_buy .main-cart__form form button {
+    text-transform: lowercase;
+  }
+  .main-cart .main-cart__wrapper .main-cart__form_buy .main-cart__form form button:first-letter {
+    text-transform: uppercase;
+  }
 }
 .main-cart .main-cart__wrapper .main-cart__form_buy .main-cart__bye {
   display: flex;
@@ -1488,7 +1509,7 @@ body {
   color: #FFFFFF;
   background: #F16D7F;
   margin: 0 42.5px 0 42.5px;
-  padding: 15.5px 37px;
+  padding: 15.5px 36px;
   border: 0;
   box-sizing: border-box;
 }
