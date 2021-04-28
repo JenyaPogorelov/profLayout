@@ -580,7 +580,7 @@ body {
           }
 
           .delivery__item__info__text {
-            font-family: Lato;
+
             font-weight: 300;
             font-size: 13.972px;
             line-height: 17px;
@@ -986,7 +986,6 @@ body {
           }
 
           .delivery__item__info__text {
-            font-family: Lato;
             font-weight: 300;
             font-size: 13.972px;
             line-height: 17px;
@@ -1584,6 +1583,191 @@ body {
 
 }
 
+.main-registration {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  @media (max-width: 1150px) {
+    margin-top: 40px;
+  }
+
+  .main-registration__wrapper {
+    margin: 0 230px;
+    display: flex;
+    column-gap: 128px;
+    @media (max-width: 1599px) {
+      margin: 0 16px;
+      justify-content: center;
+    }
+    @media (max-width: 1150px) {
+      column-gap: 22px;
+    }
+    @media (max-width: 769px) {
+      margin: 0 8px;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+    }
+
+    .main-registration__form {
+      display: grid;
+      grid-template-columns: 360px;
+      @media (max-width: 375px) {
+        grid-template-columns: 1fr;
+      }
+
+      .main-registration__form__name {
+        display: grid;
+        gap: 20px;
+
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #222222;
+        }
+
+        input {
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 16px;
+          color: #B1B1B1;
+          padding: 13px 0 16px 17px;
+          border: 1px solid #A4A4A4;
+        }
+      }
+
+      .main-registration__form__gender {
+        margin: 31px 0;
+        display: flex;
+        column-gap: 20px;
+
+        input {
+          border: 1px solid #A4A4A4;
+          margin-right: 10px;
+        }
+
+        span {
+
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 13px;
+          color: #000000;
+        }
+      }
+
+      .main-registration__form__Email_pswd {
+        display: grid;
+        gap: 20px;
+
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #222222;
+        }
+
+        input {
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 16px;
+          color: #B1B1B1;
+          padding: 13px 0 16px 17px;
+          border: 1px solid #A4A4A4;
+        }
+
+      }
+
+      .main-registration__form__pswd_info {
+        margin: 15.5px 0 39px 0;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+      }
+
+      .main-registration__form__button {
+        max-width: 167px;
+        background: #F16D7F;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        padding: 16px 0 17px 29px;
+        text-align: start;
+        border: none;
+      }
+
+      img {
+        margin-left: 20px;
+      }
+
+    }
+
+    .main-registration__perks {
+      max-width: 652px;
+      @media (max-width: 769px) {
+        max-width: 360px;
+      }
+      @media (max-width: 375px) {
+        width: 100%;
+      }
+      h2 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 22px;
+        @media (max-width: 1150px) {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 32px;
+        }
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 21px;
+        @media (max-width: 1150px) {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        list-style: none;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        @media (max-width: 1150px) {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+        }
+        li {
+          display: flex;
+          span {
+            margin-right: 23px;
+
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+
+}
+
 .footer {
 
 
@@ -1629,7 +1813,6 @@ body {
 
           .subscribe-user__text {
             max-width: 359px;
-            font-family: Lato;
             font-size: 20px;
             font-style: italic;
             font-weight: 400;
