@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
+$max-width: 1600px;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: $max-width;
   margin: 0 auto;
 }
 
@@ -32,10 +34,17 @@ body {
     height: 75px;
     background: #222222;
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    //align-items: center;
+    //padding: 0 230px;
+    column-gap: 859px;
+    justify-content: center;
     align-items: center;
-    padding: 0 230px;
+    margin: 0 auto;
     @media (max-width: 1599px) {
+      column-gap: unset;
+      margin: unset;
+      justify-content: space-between;
       padding: 0 32px;
     }
     @media (max-width: 667px) {
@@ -131,18 +140,22 @@ body {
     }
 
     .header__main__img {
-      max-width: 50%;
+      width: calc(#{$max-width} / 2);
       align-self: flex-end;
+      @media (max-width: 1599px) {
+        max-width: 50%;
+      }
       @media (max-width: 667px) {
         display: none;
       }
     }
 
     .header__main__heading {
-      width: 50%;
-      margin-right: 230px;
+      width: calc(#{$max-width} / 2);
+      //margin-right: 230px;
       @media (max-width: 1599px) {
-        margin-right: 0;
+        width: 50%;
+        //margin-right: 0;
       }
       @media (max-width: 667px) {
         width: unset;
@@ -151,6 +164,10 @@ body {
       .heading__positon {
         display: flex;
         justify-content: center;
+        padding-right: 230px;
+        @media (max-width: 1599px) {
+          padding-right: 0;
+        }
 
         .red-cube {
           min-height: 92px;
@@ -299,8 +316,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   @media (max-width: 1599px) {
-    padding-left: 16px;
-    padding-right: 16px;
+
   }
   @media (max-width: 768px) {
     margin-top: 20px;
@@ -311,11 +327,14 @@ body {
 
 
   .main__collection {
-    margin: 0 230px;
+    max-width: 1140px;
+    margin: 0 auto;
     margin-bottom: 96px;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 16px;
+    padding-right: 16px;
     @media (max-width: 1599px) {
       margin: 0 auto;
       margin-bottom: 96px;
@@ -375,8 +394,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
     @media (max-width: 1599px) {
       margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
     }
 
     .gallery__heading {
@@ -528,12 +552,14 @@ body {
     background-color: #222224;
 
     .delivery-margin {
-      margin: 0 230px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       padding: 103px 0;
+      max-width: 1140px;
+      column-gap: 30px;
       @media (max-width: 1599px) {
-        margin: 0;
+
       }
       @media (max-width: 977px) {
         flex-direction: column;
@@ -1776,13 +1802,14 @@ body {
     background-size: cover;
 
     .upper-footer__wrapper {
-      margin: 0 230px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       min-height: 448px;
+      max-width: 1140px;
       @media (max-width: 1599px) {
-        margin: 0 16px;
+        padding: 0 16px;
         justify-content: space-around;
       }
       @media (max-width: 977px) {
@@ -1843,6 +1870,9 @@ body {
           line-height: 167.2%;
           text-align: center;
           color: #222224;
+          @media (max-width: 667px) {
+            font-size: 14px;
+          }
         }
 
         .upper-footer__right__form {
@@ -1888,9 +1918,10 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0 230px;
+      margin: 0 auto;
+      max-width: 1140px;
       @media (max-width: 1599px) {
-        margin: 0 32px;
+        //margin: 0 32px;
         justify-content: space-around;
       }
       @media (max-width: 768px) {
