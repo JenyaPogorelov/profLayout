@@ -1098,12 +1098,18 @@ body {
     background: #FFFFFF;
     margin-bottom: 78px;
     border: 1px solid #EAEAEA;
+    @media (max-width: 1150px) {
+      width: 100%;
+      border-left: 0;
+      border-right: 0;
+    }
     @media (max-width: 768px) {
       top: 0;
-      width: 100%;
+      //width: 100%;
     }
     @media (max-width: 667px) {
       min-width: 360px;
+
     }
 
     .main-product__about_item__type {

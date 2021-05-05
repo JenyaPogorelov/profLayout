@@ -1025,10 +1025,16 @@ body {
   margin-bottom: 78px;
   border: 1px solid #EAEAEA;
 }
+@media (max-width: 1150px) {
+  .main-product .main-product__about_item {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+  }
+}
 @media (max-width: 768px) {
   .main-product .main-product__about_item {
     top: 0;
-    width: 100%;
   }
 }
 @media (max-width: 667px) {
