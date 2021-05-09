@@ -399,6 +399,7 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-weight: unset;
 
           span {
             color: #F16D7F;
@@ -651,31 +652,29 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  @media (max-width: 1599px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+
   @media (max-width: 1150px) {
     margin-top: 24px;
   }
   @media (max-width: 767px) {
     margin-top: 26px;
   }
-  @media (max-width: 667px) {
-    padding-left: 8px;
-    padding-right: 8px;
 
-  }
 
   .catalog {
-    //margin: 0 230px;
     display: flex;
     flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
     @media (max-width: 1599px) {
       margin: 0 auto;
     }
     @media (max-width: 767px) {
       align-items: center;
+    }
+    @media (max-width: 667px) {
+      padding-left: 7px;
+      padding-right: 7px;
     }
 
     .catalog__wrapper {
