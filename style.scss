@@ -97,6 +97,7 @@ body {
     .menu {
       position: absolute;
       width: 230px;
+      min-height: 764px;
       background: #FFFFFF;
       top: 0;
       right: 0;
@@ -104,7 +105,8 @@ body {
       display: flex;
       flex-direction: column;
       box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-      overflow: auto;
+      z-index: 1;
+      //overflow: auto;
 
       .menu__close {
         width: 12px;
@@ -267,6 +269,8 @@ body {
     .menu {
       position: absolute;
       width: 230px;
+      min-height: 764px;
+      z-index: 1;
       background: #FFFFFF;
       top: 0;
       right: 0;
@@ -274,7 +278,7 @@ body {
       display: flex;
       flex-direction: column;
       box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-      overflow: auto;
+      //overflow: auto;
 
       .menu__close {
         width: 12px;

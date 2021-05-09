@@ -83,6 +83,7 @@ body {
 .header .header__main .menu {
   position: absolute;
   width: 230px;
+  min-height: 764px;
   background: #FFFFFF;
   top: 0;
   right: 0;
@@ -90,7 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  overflow: auto;
+  z-index: 1;
 }
 .header .header__main .menu .menu__close {
   width: 12px;
@@ -252,6 +253,8 @@ body {
 .header .header__main_catalog .menu {
   position: absolute;
   width: 230px;
+  min-height: 764px;
+  z-index: 1;
   background: #FFFFFF;
   top: 0;
   right: 0;
@@ -259,7 +262,6 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  overflow: auto;
 }
 .header .header__main_catalog .menu .menu__close {
   width: 12px;
