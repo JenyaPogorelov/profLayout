@@ -2,6 +2,15 @@
 
 $max-width: 1600px;
 
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1985,6 +1994,7 @@ body {
         a:hover {
           background-color: #F16D7F;
           color: white;
+          animation: scale-up-center 0.3s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
 
           img {
             filter: invert(1);
