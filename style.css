@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+.hideBlock {
+  display: none !important;
+}
+
 .header #trigger {
   display: none;
 }
@@ -47,8 +51,38 @@
 .header .nav .gamburg-menu:hover {
   cursor: pointer;
 }
+.header .nav .nav__menu {
+  position: relative;
+}
 .header .nav .nav__menu > :nth-child(2) {
   margin: 0 33px;
+}
+.header .nav .cardItem {
+  width: 300px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  padding: 5px;
+  left: -111px;
+  top: 54px;
+  z-index: 1;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header .nav .cardItem__info {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.header .nav .cardItem__hr {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 26px;
+  border: 0.5px solid gray;
+  opacity: 0.3;
 }
 .header .header__main {
   position: relative;
