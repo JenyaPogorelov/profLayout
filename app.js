@@ -34,6 +34,8 @@ itemEl.forEach(element => {
             // Пересчитываем стоимость товара в записимости от его количества.
             recalculationTotal(buttonData);
         }
+        setFormTotalSumm();
+        // getCalculateAllSumm ()
     })
 });
 
@@ -94,8 +96,8 @@ function setTotalCost(buttonData, arrForm, countItem) {
  * @param {massive} arrForms - готовый массив с информацией о товаре
  */
 function writeForm (arrForms) {
-    for (let i = 0; i < cardItemEl.children.length - 1; i++) {
-        cardItemEl.children[i].insertAdjacentHTML('beforeend', arrForms[i]);
+    for (let i = 0; i < cardItemEl.children[0].children.length - 1; i++) {
+        cardItemEl.children[0].children[i].insertAdjacentHTML('beforeend', arrForms[i]);
     }
 }
 
@@ -109,9 +111,42 @@ function recalculationTotal(buttonData) {
     let count = reCountProduct[2];
     let total = reCountProduct[3];
     count.innerHTML++;
-    total.innerHTML = (price * count.innerHTML).toFixed(2);
+    total.innerHTML = '$' + (price * count.innerHTML).toFixed(2);
 }
 
+/**
+ * Функция получает сумму всех заказов.
+ * @returns {string} - возвращает общую сумму за все товары.
+ */
+function getCalculateAllSumm () {
+    let summ = 0;
+    let summPrice = cardItemEl.querySelectorAll('.cardItem__info_total');
+    summPrice.forEach(element => {
+        summ = +(+summ + +parseNumber(element.innerHTML)).toFixed(2);
+    })
+    return '$' + summ;
+}
+
+/**
+ * Функция вставляет в конец формы корзины Общую сумму заказа.
+ */
+function setFormTotalSumm() {
+    let summ = getCalculateAllSumm();
+    if (!cardItemEl.getElementsByClassName('cardItem__info_totalSumm').length) {
+        let markup = `<div class="cardItem__info_totalSumm">Общая сумма заказа: ${summ}</div>`;
+        cardItemEl.insertAdjacentHTML('beforeend', markup);
+    }
+    else {
+        cardItemEl.getElementsByClassName('cardItem__info_totalSumm')[0].innerHTML = `Общая сумма заказа: ${summ}`;
+    }
+
+};
+
+/**
+ * Функция для преобразование строку в которой есть числа и буквы в числовое значение удаляя из нее буквы.
+ * @param string - строка содержащая буквы и цывры
+ * @returns {number} - целочисленное значение.
+ */
 function parseNumber (string) {
-    return string.replace(/[^0-9.]/g, '');
+    return +string.replace(/[^0-9.]/g, '');
 }
