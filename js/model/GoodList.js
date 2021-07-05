@@ -18,4 +18,13 @@ export default class GoodList {
 
         this.goods.splice(indexID, 1);
     }
+//---------------------------------------------------
+    getCalculateAmount() {
+        let summ = 0;
+        this.goods.forEach(priceItem => {
+            summ += +priceItem._price;
+        })
+        return summ.toFixed(2);
+    }
+//---------------------------------------------------
 }
