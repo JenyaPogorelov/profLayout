@@ -78,6 +78,16 @@ body {
     }
     .nav__menu {
       position: relative;
+      .cart-quantity {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        top: -10px;
+        right: -10px;
+        background-color: red;
+        border-radius: 20px;
+      }
     }
 
     .nav__menu > :nth-child(2) {

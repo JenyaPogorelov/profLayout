@@ -71,6 +71,16 @@ body {
 .header .nav .nav__menu {
   position: relative;
 }
+.header .nav .nav__menu .cart-quantity {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  border-radius: 20px;
+}
 .header .nav .nav__menu > :nth-child(2) {
   margin: 0 33px;
 }

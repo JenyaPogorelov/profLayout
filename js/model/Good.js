@@ -1,16 +1,19 @@
 import idGenerator from "../utils/idGenerator.js";
 
 export default class Good {
-    constructor({image, title, description, price, discount}) {
+    constructor({image, title, description, price}) {
         this.id = idGenerator();
         this.image = image;
         this.title = title;
         this.description = description;
         this._price = price;
-        this._discount = discount;
     }
 
-    getPrice() {
-        return this._price - this._discount;
+    get price() {
+        return this._price;
+    }
+
+    set price(value) {
+        return this._price = value;
     }
 }

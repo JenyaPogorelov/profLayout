@@ -9,6 +9,14 @@ export default class GoodList {
         return this.goods;
     }
 
+    getById(id) {
+        return this.goods.find(good => good.id === id);
+    }
+
+    getQuantity() {
+        return this.goods.reduce((acc, good) => acc + good.quantity, 0);
+    }
+
     add(good) {
         this.goods.push(good);
     }
